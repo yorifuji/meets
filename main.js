@@ -1338,6 +1338,9 @@ const vm = new Vue({
         if (["welcomeDialog", "showWelcome"].includes(key) && ["true", "false"].includes(value)) {
           welcomeDialog = value == "true" ? true : false
         }
+        else if (["colabora"].includes(key) && ["true", "false"].includes(value)) {
+          this.colabora.enabled = value == "true" ? true : false
+        }
         else if (key == "mode") {
           for (let mode of consts.skyway.mode) {
             if (mode.value == value) {
