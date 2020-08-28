@@ -23,7 +23,8 @@ const vm = new Vue({
         // }
       ],
       badge_move: null,
-      mute_mic_automatically: true
+      mute_mic_automatically: true,
+      badge_style: "badge_random"
     },
     local_stream: null, // myself
     local_screen: null, // screen share stream
@@ -421,7 +422,37 @@ const vm = new Vue({
         "badge-light",
         "badge-dark"
       ]
-      badge.color = badge_color[this.getRandomInt(0,8)]
+      if (this.colabora.badge_style == "badge_random") {
+        badge.color = badge_color[this.getRandomInt(0,8)]
+      }
+      else {
+        switch (this.colabora.badge_style) {
+          case "badge_primary":
+            badge.color = "badge-primary"
+            break
+          case "badge_secondary":
+            badge.color = "badge-secondary"
+            break
+          case "badge_success":
+            badge.color = "badge-success"
+            break
+          case "badge_danger":
+            badge.color = "badge-danger"
+            break
+          case "badge_warning":
+            badge.color = "badge-warning"
+            break
+          case "badge_info":
+            badge.color = "badge-info"
+            break
+          case "badge_light":
+            badge.color = "badge-light"
+            break
+          case "badge_dark":
+            badge.color = "badge-dark"
+            break
+          }
+      }
       badge.style.left = this.getRandomInt(50, $(".colabora-container").outerWidth() - 150) + "px"
       badge.style.top = this.getRandomInt(50, $(".colabora-container").outerHeight() - 100) + "px"
 

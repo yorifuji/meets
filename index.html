@@ -124,7 +124,7 @@
             @click.stop="on_click_badge(badge, $event)">
             {{ badge.text }}
           </span>
-      </div>
+        </div>
       </div>
       <nav class="navbar fixed-bottom navbar-expand-md navbar-dark bg-dark">
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -199,38 +199,27 @@
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
             <div class="modal-header">
-              <h4 class="modal-title">Settings</h4>
-              <!-- <h4 class="modal-title">Speech Recognition and Translation</h4> -->
+              <h4 class="modal-title">{{ resource.text.settings }}</h4>
             </div>
             <div class="modal-body">
-              <!-- <label for="transcription">
-                <input type="checkbox" id="transcription" v-model="transcription.enabled" :disabled="!support_speech_recognition" />Use Speech Recognition
-              </label>
-              <br> -->
-              Select Your Language
+              {{ resource.text.select_your_language }}
               <select name="language" v-model="feature.lang" :disabled="!support_speech_recognition">
-                <option value="ja-JP">Japanese</option>
-                <option value="en-US">English</option>
+                <option value="ja-JP">{{ resource.text.language_japanese }}</option>
+                <option value="en-US">{{ resource.text.language_english }}</option>
               </select>
-              <!-- <hr>
-              <label for="translation">
-                <input type="checkbox" id="translation" v-model="feature.translation" :disabled="translation.api == ''" />Translate Incomming Text
-              </label>
-              <br>
-              <label for="speech">
-                <input type="checkbox" id="speech" v-model="feature.speech" :disabled="translation.api == ''" />Use Speech Synthesizer
-              </label>
-              <br>
-              <label for="mute_remote_voice">
-                <input type="checkbox" id="mute_remote_voice" v-model="feature.mute_remote_voice" />Mute Remote Voice
-              </label>
               <hr>
-              <h5>Debug</h5>
-              <p>
-                <label for="self_translation">
-                  <input type="checkbox" id="self_translation" v-model="debug.self_translation" :disabled="translation.api == ''" />Translate Your Voice
-                </label>
-              </p> -->
+              {{ resource.text.badge_style }}
+              <select name="badge_style" v-model="colabora.badge_style" :disabled="!support_speech_recognition">
+                <option value="badge_random">{{ resource.text.badge_random }}</option>
+                <option value="badge_primary">{{ resource.text.badge_primary }}</option>
+                <option value="badge_success">{{ resource.text.badge_success }}</option>
+                <option value="badge_danger">{{ resource.text.badge_danger }}</option>
+                <option value="badge_warning">{{ resource.text.badge_warning }}</option>
+                <option value="badge_info">{{ resource.text.badge_info }}</option>
+                <option value="badge_secondary">{{ resource.text.badge_secondary }}</option>
+                <option value="badge_light">{{ resource.text.badge_light }}</option>
+                <option value="badge_dark">{{ resource.text.badge_dark }}</option>
+              </select>
             </div>
             <div class="modal-footer">
               <!-- <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> -->

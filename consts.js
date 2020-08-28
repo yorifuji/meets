@@ -115,6 +115,19 @@ const consts = {
         "OverconstrainedError" : "カメラが指定のフォーマットに対応していません",
         "colabora" : "コラボラ",
         "settings" : "設定",
+        "select_your_language": "音声言語設定",
+        "language_japanese": "日本語",
+        "language_english": "英語",
+        "badge_style": "バッジのスタイル",
+        "badge_random": "ランダム",
+        "badge_primary": "青",
+        "badge_secondary": "グレー",
+        "badge_success": "緑",
+        "badge_danger": "赤",
+        "badge_warning": "黄",
+        "badge_info": "シアン",
+        "badge_light": "白",
+        "badge_dark": "黒"
       },
       en : {
         "welcome": "Welcome",
@@ -152,6 +165,19 @@ const consts = {
         "OverconstrainedError" : "The camera does not support the specified format",
         "colabora" : "Colabora",
         "settings" : "Settings",
+        "select_your_language": "Select Your Language",
+        "language_japanese": "Japanese",
+        "language_english": "English",
+        "badge_style": "Badge Style",
+        "badge_random": "Random",
+        "badge_primary": "Blue",
+        "badge_secondary": "Gray",
+        "badge_success": "Green",
+        "badge_danger": "Red",
+        "badge_warning": "Yellow",
+        "badge_info": "Cyan",
+        "badge_light": "White",
+        "badge_dark": "Black"
       }
     }
   }
