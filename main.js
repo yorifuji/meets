@@ -61,6 +61,7 @@ const vm = new Vue({
       fps: null,
     },
     audio: {
+      default_constraints: true,
       codec: { label: "default", value: null },
       bandwidth: { label: "default", value: null },
     },
@@ -802,7 +803,7 @@ const vm = new Vue({
       }
 
       const constraints = { video: false, audio: false };
-      if (this.microphone.device.length) constraints.audio = true;
+      if (this.microphone.device.length) constraints.audio = this.audio.default_constraints;
       if (this.camera.device.length) constraints.video = true;
 
       if (this.is_sendrecv || this.is_sendonly) {
