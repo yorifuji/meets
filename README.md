@@ -24,5 +24,3 @@ Chrome@macOS で動作確認しています。
 # About SkyWay
 
 https://webrtc.ecl.ntt.com/
-
-
