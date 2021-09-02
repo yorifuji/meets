@@ -21,10 +21,12 @@ https://yorifuji.github.io/meets/
 
 Chrome@macOS で動作確認しています。
 
-# CI/CD
+# 技術要素
 
-- GitHub Actionsを使ってGitHub Pagesに自動デプロイしています
+- [Vue.js](https://jp.vuejs.org/index.html)
+- WebRTC
+    - [SkyWay](https://webrtc.ecl.ntt.com/)
+- [Bootstrap](https://getbootstrap.jp/)
+- CI/CD
+    - GitHub Actionsを使ってGitHub Pagesに自動デプロイしています
 
-# About SkyWay
-
-https://webrtc.ecl.ntt.com/
