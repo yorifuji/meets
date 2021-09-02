@@ -21,6 +21,10 @@ https://yorifuji.github.io/meets/
 
 Chrome@macOS で動作確認しています。
 
+# CI/CD
+
+- GitHub Actionsを使ってGitHub Pagesに自動デプロイしています
+
 # About SkyWay
 
 https://webrtc.ecl.ntt.com/
