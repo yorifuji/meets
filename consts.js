@@ -110,7 +110,7 @@ const consts = {
         "join": "入室",
         "leave": "退室",
         "call": "呼び出し",
-        "input_room": "ルーム名を入力",
+        "input_room": "ルーム名を入力(英数のみ)",
         "input_peer": "PeerIDを入力",
         "OverconstrainedError" : "カメラが指定のフォーマットに対応していません",
         "colabora" : "コラボラ",
